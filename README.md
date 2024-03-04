@@ -27,10 +27,23 @@ elif r>m>n or r>n>m:
 else:
     print("Los números son iguales")
 ```
+#### Explicación de la solución
 
 ### 3. Realice un programa que lea un número enteros y determine si es par o impar.
 
+```python
+
+```
+
+#### Explicación de la solución
+
 ### 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
+
+```python
+
+```
+
+#### Explicación de la solución
 
 ### 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
@@ -57,7 +70,19 @@ elif x<r:
 else:
     print("La suma de los 2 primeros números es igual al tercer número")
 ```
+#### Explicación de la solución
+
+#### Diagrama de flujo
+
 ### 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
+
+```python
+
+```
+
+#### Explicación de la solución
+
+#### Diagrama de flujo
 
 ### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
   + El promedio
@@ -68,12 +93,39 @@ else:
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
 
+```python
+
+```
+
+#### Explicación de la solución
+
 ### 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del espectro electromagnético se encuentra.
 
+```python
+
+```
+
+#### Explicación de la solución
+
 ### 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
+
+```python
+
+```
+
+#### Explicación de la solución
 
 ### 10. Escriba un programa que dada una distancia calcule:
 + El tiempo que le tomaría a la luz recorrer la distancia.
 + El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 + El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 + El tiempo que le tomaría a Bolt recorrer la distancia.
+
+```python
+
+```
+
+#### Explicación de la solución
+
+
+#### Diagrama de flujo
