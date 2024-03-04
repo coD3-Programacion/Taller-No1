@@ -6,8 +6,27 @@
 
 ### 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
 
-[![Captura-de-pantalla-2024-03-04-122906.png](https://i.postimg.cc/hPZp5t00/Captura-de-pantalla-2024-03-04-122906.png)](https://postimg.cc/fJXc3Zp3)
+```python
+n=int
+m=int
+r=int
 
+n = int(input("Escriba el primer número "))
+m = int(input("Escriba el segundo número "))
+r = int(input("Escriba el tercer número "))
+
+if n>m>r or n>r>m:
+    print("El número mayor es " + str(n))
+
+elif m>n>r or m>r>n:
+    print("El número mayor es " + str(m))
+
+elif r>m>n or r>n>m:
+    print("El número mayor es " + str(r))
+
+else:
+    print("Los números son iguales")
+```
 
 ### 3. Realice un programa que lea un número enteros y determine si es par o impar.
 
@@ -15,8 +34,29 @@
 
 ### 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
-[![Captura-de-pantalla-2024-03-04-115536.png](https://i.postimg.cc/3rbcSLN0/Captura-de-pantalla-2024-03-04-115536.png)](https://postimg.cc/PNYyNQmd)
+```python
 
+#Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número
+
+n=int
+m=int
+r=int
+
+n = int(input("Escriba el primer número "))
+m = int(input("Escriba el segundo número "))
+r = int(input("Escriba el tercer número "))
+
+x=n+m
+
+if x>r:
+    print("La suma de los 2 primeros números es mayor al tercer número")
+
+elif x<r:
+    print("La suma de los 2 primeros números es menor al tercer número")
+
+else:
+    print("La suma de los 2 primeros números es igual al tercer número")
+```
 ### 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 
 ### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
