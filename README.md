@@ -1,5 +1,13 @@
 # Taller-No1
 
+### Integrantes:
+
+David Alejandro Sotelo Pinzón
+
+David Santiago Hoyos Mateus
+
+Diego Garcés Torres
+
 ### 1. Realice el quiz *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 
 [![Captura-de-pantalla-2024-03-04-114632.png](https://i.postimg.cc/yNCSjz06/Captura-de-pantalla-2024-03-04-114632.png)](https://postimg.cc/9D1MXKxs)
