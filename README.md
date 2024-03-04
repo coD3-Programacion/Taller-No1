@@ -9,7 +9,6 @@
 [![Captura-de-pantalla-2024-03-04-122906.png](https://i.postimg.cc/hPZp5t00/Captura-de-pantalla-2024-03-04-122906.png)](https://postimg.cc/fJXc3Zp3)
 
 
-
 ### 3. Realice un programa que lea un número enteros y determine si es par o impar.
 
 ### 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
