@@ -93,10 +93,16 @@ else:
 flowchart TD;
   A[Pedir 3 números] -->B
   B[X = primer número + segundo número] --> C{Si X > tercer número}
-  C --SI--> D[la suma de los 2 primeros números es mayor al tercero]
+  C --SI--> D[la suma de los
+            2 primeros números
+            es mayor al tercero]
   C --NO--> E{Si X < tercer número}
-  E --SI--> F[la suma de los 2 primeros números es menor al tercero]
-  E --NO--> G[la suma de los 2 primeros números es igual al tercer número]
+  E --SI--> F[la suma de los 2
+              primeros números
+              es menor al tercero]
+  E --NO--> G[la suma de los 2
+              primeros números es
+              igual al tercer número]
   D --> H(Fin)
   F --> H(Fin)
   G --> H(Fin)
