@@ -1,5 +1,7 @@
 # Taller-No1
 
+## Grupo: CoD3
+
 ### Integrantes:
 
 David Alejandro Sotelo Pinzón
@@ -36,6 +38,9 @@ else:
     print("Los números son iguales")
 ```
 #### Explicación de la solución
+
+*primeramente se especifica el tipo de variable en las 3 variables (enteros), y despues se piden los 3 números. El siguiente paso fue con 3 condicionales evaluar cual número de los 3 era el mayor utilizando tambien 
+operadores lógicos y por último tener en cuenta el caso en el que los 3 números sean iguales.
 
 ### 3. Realice un programa que lea un número enteros y determine si es par o impar.
 
@@ -80,7 +85,24 @@ else:
 ```
 #### Explicación de la solución
 
+*Se especifica el tipo de variables y se piden al usuario los 3 números, despues se crea una nueva variable llamada "x" la cual es la suma de los 2 primeros números y despues con 3 condicionales y con operadores lógicos se clasifica en una de las 3 situaciones (si la suma de los 2 primeros es mayor, menor o igual al tercer número)
+
 #### Diagrama de flujo
+
+```mermaid
+flowchart TD;
+  A[Pedir 3 números] -->B
+  B[X = primer número + segundo número] --> C{Si X > tercer número}
+  C --SI--> D[la suma de los 2 primeros números es mayor al tercero]
+  C --NO--> E{Si X < tercer número}
+  E --SI--> F[la suma de los 2 primeros números es menor al tercero]
+  E --NO--> G[la suma de los 2 primeros números es igual al tercer número]
+  D --> H(Fin)
+  F --> H(Fin)
+  G --> H(Fin)
+
+
+```
 
 ### 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 
