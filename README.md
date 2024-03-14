@@ -223,6 +223,7 @@ print("El resultado de la raiz cubica del numero menor es",h)
 ```
 
 #### Explicación de la solución
+Primero se le piden dos numeros al usuario y se organizan de menor a mayor en una lista, luego se definen dos variables como el primer y segundo numero de la lista. Luego se le pide un tercer numero al usuario y se organiza tomando en cuenta las dos anteriores variables, para despues definir tres variables como el primer, segundo y tercer numero de la lista.Se repite el mismo proceso para organizar el cuarto y quinto numero. Posteriormente para el promedio se le pide al programa que imprima la suma de los numeros dividida en 5, para la mediana se le pide que imprima la variable definida como el tercer numero de la lista, para ordenarlos de forma ascendente se le pide que imprima las variables de la primera a la quinta, mientras que para organizarla descendentemente se imprime las variables de la quinta en la lista a la primera en la lista, se le pide que imprima el resultado de la variable definida como el quinto numero elevado por la variable definida como el primer numero, por ultimo se define una funcion para sacar la raia cubica de un numero y se imprime el resultado de usar la funcion en la variable definida como el primer numero de la lista. 
 
 ### 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del espectro electromagnético se encuentra.
 
