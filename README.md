@@ -152,7 +152,74 @@ se solicita al usuario una letra, y se extrae su codigo ascii, se compara con el
   + La raíz cúbica del menor número
 
 ```python
-
+def cube_root(number, precision=0.00001):
+    x = number / 3.0
+    while True:
+        x_new = (2 * x + number / (x * x)) / 3.0
+        if abs(x - x_new) < precision:
+            return x_new
+        x = x_new
+a = float(input("Ingresa el primer numero"))
+b = float(input("Ingresa el segundo numero"))
+h = 0
+if a < b:
+    num = [a,b]
+elif a > b:
+    num =[b,a]
+else:
+    num = [a,a]
+c = float(input("Ingresa el tercer numero"))
+max = num[1]
+min = num[0]
+if max < c:
+    num = [min,max,c]
+elif min > c:
+    num = [c,min,max]
+else:
+    num = [min,c,max]
+max = num[2]
+first = num[1]
+min = num[0]
+d = float(input("Ingresa el cuarto numero"))
+if max < d:
+    num = [min,first,max,d]
+elif min > d:
+    num = [d,min,first,max]
+elif min <= d < first:
+    num = [min,d,first,max]
+elif first <= d <= max:
+    num = [min,first,d,max]
+else:
+    num=[min,min,min,min]
+max = num[3]
+second = num[2]
+first = num[1]
+min = num[0]
+e = float(input("Ingresa el quinto numero"))
+if max < e:
+    num = [min,first,second,max,e]
+elif min > e:
+    num = [e,min,first,second,max]
+elif min <= e < first:
+    num = [min,e,first,second,max]
+elif first <= e < second:
+    num = [min,first,e,second,max]
+elif second <= e <= max:
+    num = [min,first,second,e,max]
+else:
+    num=[min,min,min,min,min]
+max = float(num[4])
+third = float(num[3])
+second = float(num[2])
+first = float(num[1])
+min = float(num[0])
+h = cube_root(min)
+print("El promedio de los numeros es:", (min+first+second+third+max)/5)
+print("La mediana es", second)
+print("Los numeros ordenados en forma ascendete quedan asi:", min,",",first,",",second,",",third,",",max)
+print("Los numeros ordenados en forma descendente quedan asi:",max,",",third,",",second,",",first,",",min)
+print("El resultado del numero mayor elevado al numero menor es",max**min)
+print("El resultado de la raiz cubica del numero menor es",h)
 ```
 
 #### Explicación de la solución
