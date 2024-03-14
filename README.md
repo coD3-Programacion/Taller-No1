@@ -354,10 +354,16 @@ se solicita ingresar el nombre de un pais, se usa case para buscar una coinciden
 + El tiempo que le tomaría a Bolt recorrer la distancia.
 
 ```python
-
+x : float = float(input("ingrese una distancia en metros: "))
+l = x/2999997
+s = x/343.2
+v = x/127.8972
+u = x/11.6
+print("para recorrer una distancia de ", x, " m, la luz tardaria ", l, "s, el sonido tardaria ", s, "s, el SSC Tuatara tardaria ", v, "s, y Usain Bolt tardaria ", u,"s")
 ```
 
 #### Explicación de la solución
 
+se usa la formula v=d/t y se despeja t dejando t=d/v, la distanica se solicita y se diide entre la velocidad de la luz. el sonido, el SSC Tuatara y Usain Bolt y se  imprime el resutado
 
 #### Diagrama de flujo
