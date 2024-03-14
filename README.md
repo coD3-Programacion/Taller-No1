@@ -45,18 +45,32 @@ operadores lógicos y por último tener en cuenta el caso en el que los 3 númer
 ### 3. Realice un programa que lea un número enteros y determine si es par o impar.
 
 ```python
-
+x : int = int((input("ingrese un numero para determinar si es par o impar: ")))
+if x%2 == 0:
+    print(x, " es par")
+elif x%2 != 0:
+    print(x, " es impar")
 ```
 
 #### Explicación de la solución
+
+se solicita al usuario que ingrece un numero, se divide entre 2 y si el residuo es igual a 0, entonces el numero es par y se muestra el mensaje para pares, en caso contrario se muestra el mensjae para impares
 
 ### 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 
 ```python
-
+print("ingrese un numero para determinar si es multiplo de un segundo numero")
+x : float = float(input("ingrese un numero: "))
+y : float = float(input("ingrese un numero: "))
+if x%y==0:
+    print(x, " es multiplo de ", y)
+else:
+    print(x, " no es multiplo de ", y)
 ```
 
 #### Explicación de la solución
+
+se solicitan 2 numeros reales y se divede el primero entre el segundo, si el residuo es 0, el primero es multiplo del segundo, en caso contrario, no lo es
 
 ### 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
@@ -113,10 +127,18 @@ flowchart TD;
 ### 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 
 ```python
-
+x = input("ingrese una letra para determinar si es vocal o consonante: ")
+if ord(x) == 65 or ord(x) == 69 or ord(x) == 73 or ord(x) == 79 or ord(x) == 85 or ord(x) == 97 or ord(x) == 101 or ord(x) == 105 or ord(x) == 111 or ord(x) == 117:
+    print(x, " es una vocal")
+elif ord(x) <= 64 or ord(x) >= 123:
+    print(x, " es un simbolo")
+else:
+    print(x, " es una consonante")
 ```
 
 #### Explicación de la solución
+
+se solicita al usuario una letra, y se extrae su codigo ascii, se compara con el de las vocales, y si coincide, se muestra el mensaje para vocal, en caso contrario se compara con los simbolos, y si coincide se muestra el mensaje para simbolo, y en caso de que no coincida con ninguno de estos 2, se muestra el mensaje para consonante
 
 #### Diagrama de flujo
 
@@ -138,18 +160,125 @@ flowchart TD;
 ### 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del espectro electromagnético se encuentra.
 
 ```python
-
+x : float = float(input("ingrese una frecuencia en hz: "))
+if x <= 0:
+    print(x, " hz no pertenece a ninguna longitud de onda")
+elif x <= 30*10**3:
+    print(x, " hz pertenece a las ondas de radio de frecuencia muy baja")
+elif x <= 650*10**3:
+    print(x, " hz pertenece a las ondas de radio largas")
+elif x <= 1.7*10**6:
+    print(x, " hz pertenece a las ondas de radio medias")
+elif x <= 30*10**6:
+    print(x, " hz pertenece a las ondas de radio cortas")
+elif x <= 300*10**6:
+    print(x, " hz pertenece a las ondas de radio de muy alta frecuencia ")
+elif x <= 3*10**8:
+    print(x, " hz pertenece a las ondas de radio de ultra alta frecuencia")
+elif x <= 300*10**9:
+    print(x, " hz pertenece a las ondas de microondas")
+elif x <= 6*10**12:
+    print(x, " hz pertenece a las ondas infrarrojas lejanas/submilimetricas")
+elif x <= 120*10**12:
+    print(x, " hz pertenece a las ondas infrarrojas medias")
+elif x <= 384*10**12:
+    print(x, " hz pertenece a las ondas infrarrojas cercanas")
+elif x <= 7.89*10**14:
+    print(x, " hz pertenece a las ondas del espectro visible")
+elif x <= 1.5*10**15:
+    print(x, " hz pertenece a las ondas ultravioleta cercano")
+elif x <= 30*10**15:
+    print(x, " hz pertenece a las ondas ultravioleta extremo")
+elif x <= 30*10**18:
+    print(x, " hz pertenece a los rayos x")
+else:
+    print(x, " hz pertenece a rayos gamma")
 ```
 
 #### Explicación de la solución
+
+se silicita el ingreso de un numero, y se compara si el numero es menor a un rango de valores en hz, si lo es mustra el rango en el que se encuentra la freccuencia, en caso contrario pasa a la siguiente y se repite hata que encuentre el rango al que pertence
 
 ### 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
 
 ```python
-
+x = input("ingrese un pais de América: ")
+match x:
+    case "Antigua y Barbuda":
+        print("la capital de ", x, " es Saint John's")
+    case "Argentina":
+        print("la capital de ", x, " es Buenos Aires")
+    case "Bahamas":
+        print("la capital de ", x, " es Nasáu")
+    case "Barbados":
+        print("la capital de ", x, " es Bridgetown")
+    case "Belice":
+        print("la capital de ", x, " es Belmopán")
+    case "Bolivia":
+        print("las capitales de ", x, " son Sucre y La Paz")
+    case "Brasil":
+        print("la capital de ", x, " es Brasilia")
+    case "Canadá":
+        print("la capital de ", x, " es Ottawa")
+    case "Chile":
+        print("la capital de ", x, " es Santiago")
+    case "Colombia":
+        print("la capital de ", x, " es Bogotá")
+    case "Costa Rica":
+        print("la capital de ", x, " es San José")
+    case "Cuba":
+        print("la capital de ", x, " es La Habana")
+    case "Dominica":
+        print("la capital de ", x, " es Roseau")
+    case "Ecuador":
+        print("la capital de ", x, " es Quito")
+    case "El Salvador":
+        print("la capital de ", x, " es San Salvador")
+    case "Estados Unidos":
+        print("la capital de ", x, " es Washington D. C.")
+    case "Granada":
+        print("la capital de ", x, " es Saint George")
+    case "Guatemala":
+        print("la capital de ", x, " es Ciudad de Guatemala")
+    case "Guyana":
+        print("la capital de ", x, " es Georgetown")
+    case "Haití":
+        print("la capital de ", x, " es Puerto Príncipe")
+    case "Honduras":
+        print("la capital de ", x, " es Tegucigalpa")
+    case "Jamaica":
+        print("la capital de ", x, " es Kingston")
+    case "México":
+        print("la capital de ", x, " es Ciudad de México")
+    case "Nicaragua":
+        print("la capital de ", x, " es Managua")
+    case "Panamá":
+        print("la capital de ", x, " es Ciudad de Panamá")
+    case "Paraguay":
+        print("la capital de ", x, " es Asunción")
+    case "Perú":
+        print("la capital de ", x, " es Lima")
+    case "Republica Dominicana":
+        print("la capital de ", x, " es Santo Domingo")
+    case "San Cristóbal y Nieves":
+        print("la capital de ", x, " es Basseterre")
+    case "San Vicente y las Granadinas":
+        print("la capital de ", x, " es kingstown")
+    case "Santa Lucia":
+        print("la capital de ", x, " es Castries")
+    case "Surinam":
+        print("la capital de ", x, " es Paramaribo")
+    case "Trinidad y Tobago":
+        print("la capital de ", x, " es Puerto España")
+    case "uruguay":
+        print("la capital de ", x, " es Montevideo")
+    case "Venezuela":
+        print("la capital de ", x, " es Caracas")
 ```
 
 #### Explicación de la solución
+
+se solicita ingresar el nombre de un pais, se usa case para buscar una coincidencia exacta y se imprime la capital
 
 ### 10. Escriba un programa que dada una distancia calcule:
 + El tiempo que le tomaría a la luz recorrer la distancia.
