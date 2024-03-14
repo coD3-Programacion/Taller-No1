@@ -142,6 +142,22 @@ se solicita al usuario una letra, y se extrae su codigo ascii, se compara con el
 
 #### Diagrama de flujo
 
+```mermaid
+flowchart TD;
+  A[Ingrese una letra] -->B
+  B{Codigo ASCII
+    pertenece a vocal?}
+  B --SI--> C[Es una vocal]
+  B --NO--> D{Codigo ASCII
+             pertenece a un simbolo?}
+  D --SI--> E[Es un simbolo]
+  D --NO--> F[Es una consonante]
+  F --> H(Fin)
+  E --> H(Fin)
+  C --> H(Fin)
+
+```
+
 ### 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
   + El promedio
   + La mediana 
@@ -365,6 +381,18 @@ print("para recorrer una distancia de ", x, " m, la luz tardaria ", l, "s, el so
 
 #### Explicación de la solución
 
-se usa la formula v=d/t y se despeja t dejando t=d/v, la distanica se solicita y se diide entre la velocidad de la luz. el sonido, el SSC Tuatara y Usain Bolt y se  imprime el resutado
+se usa la formula v=d/t y se despeja t dejando t=d/v, la distancia se solicita y se divide entre la velocidad de la luz. el sonido, el SSC Tuatara y Usain Bolt y se imprime el resutado
 
 #### Diagrama de flujo
+
+```mermaid
+flowchart TD;
+  A[Ingrese una distancia] -->B
+  B[l = x/2999997] -->C
+  C[s = x/343.2] -->D
+  D[v = x/127.8972] -->E
+  E[u = x/11.6] -->F
+  F[Imprimir distancias
+    con los valores] --> H(Fin)
+
+```
